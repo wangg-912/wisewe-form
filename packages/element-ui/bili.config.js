@@ -27,7 +27,7 @@ module.exports = {
     externals: ['vue', 'Vue', 'element-ui', 'elementUI'],
     output: {
         format: ['umd', 'umd-min'],
-        moduleName: 'formCreate',
+        moduleName: 'wiseweForm',
         fileName: 'wisewe-form[min].js',
         extractCSS: false
     },

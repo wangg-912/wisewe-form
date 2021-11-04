@@ -1,6 +1,6 @@
-# @form-create/component-subform
+# @wisewe-form/component-subform
 
-@form-create 内置组件
+@wisewe-form 内置组件
 
-[GitHub](https://github.com/xaboy/form-create) | [文档](http://form-create.com/v2/) | [Document](http://form-create.com/en/v2/)
+[GitHub](https://github.com/wangg-912/wisewe-form) | [文档]() | [Document]()
 

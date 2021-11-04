@@ -267,7 +267,7 @@ export default function mock() {
                 props: {
                     disabled: Boolean,
                     value: Number,
-                    formCreate: Object
+                    wiseweForm: Object
                 },
                 watch: {
                     value: {

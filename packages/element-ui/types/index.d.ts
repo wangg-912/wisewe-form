@@ -14,7 +14,7 @@ import { ApiAttrs, CreatorAttrs, OptionAttrs, RuleAttrs } from "./config";
 
 declare module "vue/types/vue" {
 	interface Vue {
-		$formCreate: FormCreate<
+		$wiseweForm: FormCreate<
 			Maker,
 			OptionAttrs,
 			CreatorAttrs,
@@ -24,15 +24,15 @@ declare module "vue/types/vue" {
 	}
 }
 
-declare const formCreate: FormCreate<
+declare const wiseweForm: FormCreate<
 	Maker,
 	OptionAttrs,
 	CreatorAttrs,
 	RuleAttrs,
 	ApiAttrs
 >;
-export default formCreate;
-export declare const maker: typeof formCreate.maker;
+export default wiseweForm;
+export declare const maker: typeof wiseweForm.maker;
 export type FormRule = $FormRule<
 	OptionAttrs,
 	CreatorAttrs,

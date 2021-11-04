@@ -44,7 +44,7 @@ export default function $FormCreate(FormCreate) {
             };
         },
         render() {
-            return this.formCreate.render();
+            return this.wiseweForm.render();
         },
         methods: {
             _refresh() {
@@ -69,22 +69,22 @@ export default function $FormCreate(FormCreate) {
             },
             option: {
                 handler(n) {
-                    this.formCreate.initOptions(n);
+                    this.wiseweForm.initOptions(n);
                     this.$f.refresh();
                 },
                 deep: true
             },
             rule(n) {
                 if (n.length === this.renderRule.length && n.every(v => this.renderRule.indexOf(v) > -1)) return;
-                this.formCreate.$handle.reloadRule(n);
+                this.wiseweForm.$handle.reloadRule(n);
                 this._renderRule();
             }
         },
         beforeCreate() {
             const { rule, option } = this.$options.propsData;
-            this.formCreate = new FormCreate(this, rule, option);
-            Object.keys(this.formCreate.prop).forEach(k => {
-                extend(this.$options[k], this.formCreate.prop[k]);
+            this.wiseweForm = new FormCreate(this, rule, option);
+            Object.keys(this.wiseweForm.prop).forEach(k => {
+                extend(this.$options[k], this.wiseweForm.prop[k]);
             })
         },
     }

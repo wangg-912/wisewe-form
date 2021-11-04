@@ -1,4 +1,4 @@
-import $FormCreate from '../components/formCreate';
+import $FormCreate from '../components/wiseweForm';
 import Vue from 'vue';
 import makerFactory from '../factory/maker';
 import Handle from '../handler';
@@ -141,7 +141,7 @@ export default function FormCreateFactory(config) {
 
     function create(rules, _opt, parent) {
         let $vm = mountForm(rules, _opt || {});
-        const _this = $vm.$refs.fc.formCreate;
+        const _this = $vm.$refs.fc.wiseweForm;
         _this.$parent = parent;
         _getEl(_this.options).appendChild($vm.$el);
         return _this.api();
@@ -243,8 +243,8 @@ export default function FormCreateFactory(config) {
     })
 
 
-    function useAttr(formCreate) {
-        extend(formCreate, {
+    function useAttr(wiseweForm) {
+        extend(wiseweForm, {
             version: config.version,
             ui: config.ui,
             data,
@@ -264,7 +264,7 @@ export default function FormCreateFactory(config) {
             parseJson,
             toJson,
             init(rules, _opt = {}) {
-                let $vm = mountForm(rules, _opt), _this = $vm.$refs.fc.formCreate;
+                let $vm = mountForm(rules, _opt), _this = $vm.$refs.fc.wiseweForm;
                 return {
                     mount($el) {
                         if ($el && is.Element($el))
@@ -285,8 +285,8 @@ export default function FormCreateFactory(config) {
         });
     }
 
-    function useStatic(formCreate) {
-        extend(formCreate, {
+    function useStatic(wiseweForm) {
+        extend(wiseweForm, {
             create,
             install(Vue, options) {
                 globalConfig = { ...globalConfig, ...(options || {}) }
@@ -294,13 +294,13 @@ export default function FormCreateFactory(config) {
                 Vue._installedFormCreate = true;
                 _vue = Vue;
 
-                const $formCreate = function (rules, opt = {}) {
+                const $wiseweForm = function (rules, opt = {}) {
                     return create(rules, opt, this);
                 };
 
-                useAttr($formCreate);
+                useAttr($wiseweForm);
 
-                Vue.prototype.$formCreate = $formCreate;
+                Vue.prototype.$wiseweForm = $wiseweForm;
                 Vue.component('FormCreate', $form());
                 Vue.component('FcFragment', _fragment);
             }
