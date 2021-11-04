@@ -1,0 +1,68 @@
+{
+    "name": "@wisewe-form/element-ui",
+    "version": "2.5.11",
+    "description": "element-ui动态表单|wisewe-form is a form generation component that can generate dynamic rendering, data collection, verification and submission functions through JSON. Supports 3 UI frameworks, and supports the generation of any Vue components. Built-in 20 kinds of commonly used form components and custom components, no matter how complex forms can be easily handled.",
+    "main": "./dist/wisewe-form.min.js",
+    "module": "./dist/wisewe-form.min.js",
+    "unpkg": "./dist/wisewe-form.min.js",
+    "jsdelivr": "./dist/wisewe-form.min.js",
+    "typings": "./types/index.d.ts",
+    "scripts": {
+        "clean": "rimraf dist/",
+        "dev:ele": "vue-cli-service serve",
+        "bili": "cross-env UI_LIB=element-ui bili",
+        "build": "npm-run-all clean bili"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xaboy/wisewe-form.git"
+    },
+    "keywords": [
+        "动态表单",
+        "@wisewe-form",
+        "form-builder",
+        "form",
+        "components",
+        "vue.js",
+        "element-ui",
+        "json-form",
+        "dynamic-form"
+    ],
+    "files": [
+        "README.md",
+        "package.json",
+        "LICENSE",
+        "src",
+        "types",
+        "dist"
+    ],
+    "author": "xaboy",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/xaboy/wisewe-form/issues"
+    },
+    "homepage": "http://www.wisewe-form.com",
+    "dependencies": {
+        "@wisewe-form/component-elm-checkbox": "^2.5.11",
+        "@wisewe-form/component-elm-frame": "^2.5.11",
+        "@wisewe-form/component-elm-group": "^2.5.11",
+        "@wisewe-form/component-elm-radio": "^2.5.11",
+        "@wisewe-form/component-elm-select": "^2.5.11",
+        "@wisewe-form/component-elm-tree": "^2.5.11",
+        "@wisewe-form/component-elm-upload": "^2.5.11",
+        "@wisewe-form/component-subform": "^2.5.10",
+        "@wisewe-form/core": "^2.5.11",
+        "@wisewe-form/utils": "^2.5.11"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@wisewe-form/component-wangeditor": "^2.5.5",
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-service": "^4.5.3",
+        "@vue/composition-api": "^1.0.0-beta.22",
+        "element-ui": "^2.13.2",
+        "v-jsoneditor": "^1.4.2"
+    }
+}

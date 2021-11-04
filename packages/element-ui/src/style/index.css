@@ -1,0 +1,11 @@
+.wisewe-form .wisewe-form .el-form-item {
+    margin-bottom: 22px;
+}
+
+.wisewe-form .wisewe-form .el-form-item .el-form-item {
+    margin-bottom: 0px;
+}
+
+.wisewe-form{
+    transform: rotateZ(0);
+}

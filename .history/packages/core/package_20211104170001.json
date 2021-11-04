@@ -1,0 +1,47 @@
+{
+    "name": "@wisewe-form/core",
+    "version": "1.0.0",
+    "description": "vue动态表单,助你轻松搞定表单|wisewe-form is a form generation component that can generate dynamic rendering, data collection, verification and submission functions through JSON. Supports 3 UI frameworks, and supports the generation of any Vue components. Built-in 20 kinds of commonly used form components and custom components, no matter how complex forms can be easily handled.",
+    "main": "./dist/index.min.js",
+    "module": "./dist/index.min.js",
+    "typings": "./types/index.d.ts",
+    "scripts": {
+        "clean": "rimraf dist/",
+        "bili": "cross-env UI_LIB=core bili",
+        "build": "npm-run-all clean bili"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xaboy/wisewe-form.git"
+    },
+    "keywords": [
+        "动态表单",
+        "@wisewe-form",
+        "form-builder",
+        "form",
+        "components",
+        "vue.js",
+        "json-form",
+        "dynamic-form"
+    ],
+    "files": [
+        "README.md",
+        "package.json",
+        "LICENSE",
+        "src",
+        "types",
+        "dist"
+    ],
+    "author": "xaboy",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/xaboy/wisewe-form/issues"
+    },
+    "homepage": "http://www.wisewe-form.com",
+    "dependencies": {
+        "@wisewe-form/utils": "^1.0.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
