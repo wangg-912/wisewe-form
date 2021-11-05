@@ -27,10 +27,7 @@ module.exports = {
             'error',
             4
         ],
-        'quotes': [
-            'error',
-            'single'
-        ],
+        'quotes': 'off',
         'block-spacing': 'error',
         'no-unused-vars': 'warn',
         'object-curly-spacing': 'error',
