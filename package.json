@@ -1,14 +1,16 @@
 {
     "name": "wisewe-form",
-    "private": false,
+    "private": true,
     "scripts": {
         "build": "node tools/cli/run.js build",
         "dev:ele": "cd packages/element-ui && npm run dev:ele",
         "commit": "git cz",
+        "push": "git push -u origin master",
         "lint": "eslint *.js",
         "clear-all": "rimraf package-lock.json node_modules packages/*/node_modules components/*/*/node_modules packages/*/package-lock.json components/*/*/package-lock.json",
         "bootstrap": "npm run clear-all && npm i && npm-run-all bootstrap:lerna",
-        "bootstrap:lerna": "lerna bootstrap -- --ignore-engines"
+        "bootstrap:lerna": "lerna bootstrap -- --ignore-engines",
+        "publish": "lerna publish"
     },
     "devDependencies": {
         "@vue/cli-service": "^4.5.3",
@@ -56,5 +58,6 @@
         "@vue/cli-plugin-babel": "^4.5.3",
         "commander": "^6.0.0",
         "rollup-plugin-commonjs": "^10.1.0"
-    }
+    },
+    "version": "1.0.0"
 }
