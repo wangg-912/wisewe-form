@@ -36,5 +36,6 @@
     "homepage": "http://www.wisewe-form.com",
     "publishConfig": {
         "access": "public"
-    }
+    },
+    "gitHead": "571fc879d69aed4852da1b15d9f36981ce142c70"
 }

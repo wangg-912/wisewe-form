@@ -64,5 +64,6 @@
         "@wisewe-form/component-wangeditor": "^1.0.0",
         "element-ui": "^2.13.2",
         "v-jsoneditor": "^1.4.2"
-    }
+    },
+    "gitHead": "571fc879d69aed4852da1b15d9f36981ce142c70"
 }

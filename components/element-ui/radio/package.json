@@ -38,5 +38,6 @@
   },
   "dependencies": {
     "@wisewe-form/utils": "^1.0.0"
-  }
+  },
+  "gitHead": "571fc879d69aed4852da1b15d9f36981ce142c70"
 }
