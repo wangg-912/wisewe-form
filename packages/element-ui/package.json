@@ -50,7 +50,7 @@
         "@wisewe-form/component-elm-select": "^1.0.0",
         "@wisewe-form/component-elm-tree": "^1.0.0",
         "@wisewe-form/component-elm-upload": "^1.0.0",
-        "@wisewe-form/component-subform": "^2.5.10",
+        "@wisewe-form/component-subform": "^1.0.0",
         "@wisewe-form/core": "^1.0.0",
         "@wisewe-form/utils": "^1.0.0"
     },
@@ -58,10 +58,10 @@
         "access": "public"
     },
     "devDependencies": {
-        "@wisewe-form/component-wangeditor": "^2.5.5",
         "@vue/cli-plugin-babel": "~4.5.0",
         "@vue/cli-service": "^4.5.3",
         "@vue/composition-api": "^1.0.0-beta.22",
+        "@wisewe-form/component-wangeditor": "^1.0.0",
         "element-ui": "^2.13.2",
         "v-jsoneditor": "^1.4.2"
     }
